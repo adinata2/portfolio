@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafi — Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">RAFI<span></span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" data-node="00" class="nav-link active">Home</a></li>
+    <li><a href="#about" data-node="01" class="nav-link">About</a></li>
+    <li><a href="#resume" data-node="02" class="nav-link">Resume</a></li>
+    <li><a href="#portfolio" data-node="03" class="nav-link">Portfolio</a></li>
+    <li><a href="#contact" data-node="04" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="rail" id="rail">
+  <div class="node active" data-target="home"></div>
+  <div class="node" data-target="about"></div>
+  <div class="node" data-target="resume"></div>
+  <div class="node" data-target="portfolio"></div>
+  <div class="node" data-target="contact"></div>
+</div>
+
+<section id="home">
+  <div class="home-wrap">
+    <div class="home-text">
+      <h2>Halo, Saya Muhammad Rafi Adinata <br> <span class="accent">Sebagai</span> <span class="accent">Software Engineer</span>.</h2> <br/>
+      <p class="lead">
+        seorang mahasiswa Software Engineer yang berfokus pada pembangunan sistem server yang efisien dan manajemen database yang skalabel.
+      </p>
+      <div class="home-actions">
+        <a href="#portfolio" class="btn solid">Lihat Proyek</a>
+        <a href="#contact" class="btn ghost">Hubungi Saya</a>
+      </div>
+      <div class="status-strip">
+        <div><b>10+</b>Proyek Selesai</div>
+        <div><b>3</b>Domain: IoT / AI / Android</div>
+      </div>
+    </div>
+    <div class="photo-frame reveal">
+      <img src="assets/foto-home.jpeg" alt="Foto Rafi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="placeholder">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="eyebrow">Profil</div>
+  <h2>Tentang Saya</h2>
+  <div class="about-grid">
+    <div class="about-top">
+      <div class="photo-frame small reveal">
+        <img src="assets/foto-about.jpeg" alt="Foto Rafi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="placeholder">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <span>assets/foto-about.jpeg</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p>
+          Saya adalah mahasiswa jurusan Informatika yang memiliki minat dan keahlian di bidang Software Engineering, 
+          dengan fokus pada perancangan logika sistem. Terbiasa menggunakan JavaScript, C++, HTML, dan Python, serta framework modern seperti Express, Flask, dan FastAPI. 
+          Saya telah mengimplementasikan keahlian ini pada proyek nyata, contohnya penggunaan Node.js 
+          dan integrasi API kecerdasan buatan dalam membangun chatbot asisten kebugaran virtual. 
+          Saya senang memecahkan masalah teknis, terus belajar hal baru, 
+          dan terbiasa berkolaborasi dalam tim maupun mandiri untuk menghasilkan sistem yang interaktif, responsif, dan tepat sasaran.
+        </p>
+        <p>
+          Di luar coding, saya suka masuk ke kompetisi, seperti business plan. 
+          Rasanya seperti latihan berpikir cepat sambil tetap rapi dalam eksekusi.
+        </p>
+        <p>
+          Filosofi kerja saya sederhana: prototipe dulu, sempurna belakangan.
+        </p>
+      </div>
+    </div>
+    <div class="skill-panel reveal">
+      <div class="skill-row">
+        <div class="top"><span>Backend Development</span><span>80%</span></div>
+        <div class="bar"><i style="width:80%"></i></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span>Frontend Development</span><span>70%</span></div>
+        <div class="bar"><i style="width:70%"></i></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span>Android (Kotlin)</span><span>80%</span></div>
+        <div class="bar"><i style="width:80%"></i></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span>Artificial Intelligence</span><span>65%</span></div>
+        <div class="bar"><i style="width:65%"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="eyebrow">Riwayat</div>
+  <h2>Resume</h2>
+  
+  <div class="resume-container" style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 2rem;">
+    
+    <!-- Bagian Kiri: Education -->
+    <div class="resume-left" style="flex: 1; min-width: 300px;">
+      <h3 style="margin-bottom: 1.5rem;">Education</h3>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="date">2024 — Sekarang</div>
+          <h3>Mahasiswa Informatika</h3>
+          <h5>Universitas Pembangunan Nasional "Veteran" Jakarta</h5>
+          <p>Mempelajari bahasa pemrograman seperti C++, javascript, SQL, Android (kotlin), dan python.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Kanan: Experience -->
+    <div class="resume-right" style="flex: 1; min-width: 300px;">
+      <h3 style="margin-bottom: 1.5rem;">Experience</h3>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="date">2025 — Sekarang</div>
+          <h3>Software Engineer</h3>
+          <h5>Backend Developer</h5>
+          <p>Mengembangkan FitBot, sebuah chatbot fitness menggunakan Node.js dan integrasi database untuk memberikan rekomendasi latihan secara otomatis kepada pengguna.</p>
+        </div>
+        <div class="t-item reveal">
+          <div class="date">2025 — 2026</div>
+          <h3>Kepala divisi Kaderisasi</h3>
+          <h5>Himpunan Mahasiswa Informatika UPN Veteran Jakarta</h5>
+          <p>•	Memimpin dan bertanggung jawab penuh atas koordinasi serta evaluasi kinerja anggota aktif dalam pelaksanaan program kerja organisasi selama satu periode kepengurusan.</p>
+          <p>•	Bertanggung jawab menyelenggarakan 3 acara utama Departemen PSDM, serta memastikan kedisiplinan tingkat partisipasi aktif audiens untuk selalu melampaui target minimum 50% + 1.</p>
+          <p>•	Mengambil peran kepemimpinan lintas fungsi sebagai koordinator divisi Acara, Perlengkapan, dan HPDD dalam merencanakan dan mengeksekusi berbagai kegiatan strategis di bawah Departemen Pengembangan SDM.</p>
+        </div>
+        <div class="t-item reveal">
+          <div class="date">2026 </div>
+          <h3>Proyek Microservices</h3>
+          <p>Membangun sistem berbasis Laravel, Node.js/Express, Docker, dan autentikasi JWT untuk simulasi arsitektur skala kecil.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="eyebrow">Karya</div>
+  <h2>Portfolio</h2>
+  <div class="proj-grid">
+    <div class="proj-card reveal"
+      data-title="Simulasi Reservasi Hotel Online"
+      data-desc="Sistem ini dirancang untuk mengelola ketersediaan unit kamar secara real-time dan memproses transaksi pemesanan secara otomatis."
+      data-thumb="assets/reservasi_hotel.png"
+      data-link="https://adinata2.github.io/reservasi/">
+      <div class="proj-thumb">
+        <img src="assets/reservasi_hotel.png" alt="Simulasi Reservasi Hotel Online" onerror="this.style.display='none'">
+        <div class="thumb-overlay">
+          <button class="icon-btn" title="Lihat detail" onclick="openProjectModal(this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <a class="icon-btn" href="https://adinata2.github.io/reservasi/" title="Buka project" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 15 21 3M21 3h-6M21 3v6M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <h3>Simulasi Reservasi Hotel Online</h3>
+        <p>Sistem ini dirancang untuk mengelola ketersediaan unit kamar secara real-time dan memproses transaksi pemesanan secara otomatis.</p>
+        <div class="proj-tags"><span>javascript</span> <span>html</span></div>
+      </div>
+    </div>
+
+    <div class="proj-card reveal"
+      data-title="Fitbot (fitness chatbot)"
+      data-desc="Sebuah aplikasi chatbot yang dapat menjadi asisten kebugaran sehari hari."
+      data-thumb="assets/Fitbot-project.png"
+      data-link="https://abcdefakhry.github.io/FitBot/">
+      <div class="proj-thumb">
+        <img src="assets/Fitbot-project.png" alt="Fitbot" onerror="this.style.display='none'">
+        <div class="thumb-overlay">
+          <button class="icon-btn" title="Lihat detail" onclick="openProjectModal(this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <a class="icon-btn" href="https://abcdefakhry.github.io/FitBot/" title="Buka project" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 15 21 3M21 3h-6M21 3v6M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <h3>Fitbot (fitness chatbot)</h3>
+        <p>Sebuah aplikasi chatbot yang dapat menjadi asisten kebugaran sehari hari.</p>
+        <div class="proj-tags"><span>backend development</span> <span>JavaScript</span></div>
+      </div>
+    </div>
+
+    <div class="proj-card reveal"
+      data-title="Sistem Peminjaman Perpustakaan Online"
+      data-desc="Implementasi forward/backward chaining, alpha-beta pruning, dan pencarian heuristik untuk studi kasus kelas."
+      data-thumb="assets/perpustakaan_online.png"
+      data-link="https://adinata2.github.io/library/">
+      <div class="proj-thumb">
+        <img src="assets/perpustakaan_online.png" alt="Sistem Peminjaman Perpustakaan Online" onerror="this.style.display='none'">
+        <div class="thumb-overlay">
+          <button class="icon-btn" title="Lihat detail" onclick="openProjectModal(this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <a class="icon-btn" href="https://adinata2.github.io/library/" title="Buka project" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 15 21 3M21 3h-6M21 3v6M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <h3>Sistem Peminjaman Perpustakaan Online</h3>
+        <p>Sistem ini berorientasi pada kemudahan akses katalog dan efisiensi pelacakan sirkulasi buku.</p>
+        <div class="proj-tags"><span>Javascript</span> <span>Database</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal-backdrop" id="projectModal" onclick="closeProjectModal(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+    <div class="modal-thumb" id="modalThumb"></div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="eyebrow center">Terhubung</div>
+  <h2 class="center">Contact</h2>
+  <p class="lead center">Saya terbuka untuk diskusi mengenai pengembangan backend, AI, atau peluang kolaborasi dan magang. Hubungi lewat salah satu jalur di bawah ini.</p>
+  <div class="contact-info-grid">
+    <div class="info-card reveal">
+      <div class="info-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      </div>
+      <span class="info-label">Lokasi</span>
+      <div class="info-value">Bekasi, Jawa Barat</div>
+    </div>
+    <div class="info-card reveal">
+      <div class="info-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <span class="info-label">Telepon</span>
+      <div class="info-value">+62 877-4834-0029</div>
+    </div>
+    <div class="info-card reveal">
+      <div class="info-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+      </div>
+      <span class="info-label">Email</span>
+      <div class="info-value"><a href="mailto:rafi@email.com">rafiadinata18@email.com</a></div>
+    </div>
+  </div>
+  <div class="social-strip">LinkedIn · GitHub · Instagram</div>
+</section>
+
+<footer>
+  © 2026 Rafi. Dirancang &amp; dikodekan dengan kopi dan rasa penasaran.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
